@@ -15,7 +15,7 @@ class MusicPlayer(App):
 
     def __init__(self):
         App.__init__(self)
-        self.sound = SoundLoader.load('Zara Zara by Maadhyam.mp3')
+        self.sound = SoundLoader.load('music.mp3')
     
 
     def build(self):
@@ -85,7 +85,7 @@ class MusicPlayer(App):
         layout.add_widget(volincrease)
         layout.add_widget(voldecrease)
         layout.add_widget(exit)
-        layout.add_widget(Label(text='Zara Zara by Maadhyam', markup=True, font_size="20sp"))
+        layout.add_widget(Label(text='Music', markup=True, font_size="20sp"))
 
         playbtn.bind(on_press=self.play)
         pausebtn.bind(on_press=self.pause)
